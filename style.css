@@ -1,0 +1,154 @@
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+.box, .center-box, .order-box, .cart-box, .success-box {
+    background: #ffffff;
+    margin: 70px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    animation: fadeUp 0.5s ease-in-out;
+    transition: all 0.3s ease;
+}
+
+
+.box:hover,
+.center-box:hover,
+.order-box:hover,
+.cart-box:hover,
+.success-box:hover {
+    transform: scale(1.03);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+
+.box { width: 380px; }
+.center-box { width: 450px; }
+.cart-box { width: 700px; }
+.order-box { width: 85%; text-align: left; }
+.success-box { width: 400px; margin: 120px auto; }
+
+
+h1 { color: #222; font-size: 32px; }
+h2, h3 { color: #444; }
+
+
+input {
+    width: 90%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+
+button,
+a.button {
+    display: inline-block;
+    padding: 12px;
+    width: 100%;
+    background: linear-gradient(135deg, #6c63ff, #4e54c8);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: center;
+}
+
+button:hover,
+a.button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+}
+
+
+.center-box a,
+a.menu {
+    display: block;
+    width: 85%;
+    margin: 10px auto;
+    padding: 14px;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    color: white;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+
+.center-box a:hover,
+a.menu:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+
+p {
+    background: #fff;
+    padding: 12px;
+    margin: 10px auto;
+    width: 80%;
+    border-radius: 10px;
+}
+
+
+img {
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+
+a[href*="add_cart"] {
+    color: green;
+    font-weight: bold;
+}
+
+a[href*="remove"] {
+    color: red;
+    font-weight: bold;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+
+.success-box a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: green;
+    color: white;
+    border-radius: 8px;
+}
+
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+* {
+    box-sizing: border-box;
+}
